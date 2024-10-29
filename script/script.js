@@ -16,7 +16,7 @@ function sessao() {
         window.location.href = "./admin/admin.html";
     }
 }
-sessao();
+//sessao();
 
 function abrirModal(){
     const modal = document.getElementById('fundomodal');

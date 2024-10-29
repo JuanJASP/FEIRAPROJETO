@@ -9,7 +9,7 @@ document.getElementById('cadexpositor').addEventListener('submit', function(even
         descricao: document.getElementById('sobreExpositor').value
     };
 
-    const expositores = JSON.parse(localStorage.getItem('expositores'));
+    const expositores = JSON.parse(localStorage.getItem('expositores')) || [];
     expositores.push(expositor);
     localStorage.setItem('expositores', JSON.stringify(expositores));
     this.reset();

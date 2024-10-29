@@ -9,7 +9,7 @@ document.getElementById('cadartista').addEventListener('submit', function(event)
         contrato: document.getElementById('contratoArtista').value
     };
 
-    const artistas = JSON.parse(localStorage.getItem('artistas'));
+    const artistas = JSON.parse(localStorage.getItem('artistas')) || [];
     artistas.push(artista);
     localStorage.setItem('artistas', JSON.stringify(artistas));
 

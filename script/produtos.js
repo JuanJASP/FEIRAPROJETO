@@ -7,7 +7,7 @@ document.getElementById('cadproduto').addEventListener('submit', function(event)
         cuidados: document.getElementById('cuidadosProduto').value,
         quantidade: document.getElementById('quantidadeProduto').value
     };
-    const produtos = JSON.parse(localStorage.getItem('produtos'));
+    const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
     produtos.push(produto);
     localStorage.setItem('produtos', JSON.stringify(produtos));
 
