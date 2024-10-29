@@ -1,0 +1,128 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #a8cfa9;
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+nav{
+    display: flex;
+    color: white;
+    background-color: #b34db2;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+}
+nav a:hover{
+    color: #4cb24d;
+}
+nav li{
+    list-style-type: none;
+}
+.sobre{
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px)
+}
+.sobre-texto{
+    width: 40%;
+    height: auto ;
+}
+.sobre img{
+    width: 50%;
+    height: 450px;
+    border-radius: 100%;
+}
+.infos-texto{
+    width: 40%;
+    height: auto ;
+}
+.infos img{
+    width: 50%;
+    height: 600px;
+}
+.contato-texto{
+    width: 40%;
+    height: auto ;
+}
+.contato img{
+    width: 40%;
+    height: auto;
+    border-radius: 50px;
+    transform: rotate(40deg);
+}
+.fundomodal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #00000080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.modal{
+    display: flex;
+    background-color: #874687;
+    width: 600px;
+    height: 280px;
+    margin: auto;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+form{
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+input{
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+.entrar{
+    background-color: #4cb24d;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 150px ;
+}
+.entrar:hover{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color:#4cb24d;
+    cursor: pointer;
+}
+.fundomodal.abrir{
+    display: flex;
+}

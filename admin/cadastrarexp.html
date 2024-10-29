@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Expositores</title>
+    <link rel="stylesheet" href="../style/admin.css">
+</head>
+<body>
+    <nav>
+        <li><a href="cadastrarexp.html">Cadastrar Expositor</a></li>
+        <li><a href="cadastarart.html">Cadastrar Artista</a></li>
+        <li><a href="cadastrarprod.html">Cadastrar Produto</a></li> 
+        <li><a href="../index.html" onclick="sair()">Sair</a></li> 
+    </nav>
+    
+    <main>
+        <Section>
+            <h1 style="color: #bf81be; text-align: center;">CADASTRO DE EXPOSITORES</h1>
+            <br>
+            <h3 style="text-align: center;">Informe os dados do expositor: </h3>
+        </Section>
+        <br>
+        <section>
+            <form action="" method="post" id="cadexpositor">
+                <label for="nomeExpositor">Nome do Expositor</label><br>
+                <input type="text" id="nomeExpositor" name="nomeExpositor" placeholder="Nome Completo do Expositor" required><br>
+                <label for="idadeExpositor">Idade</label><br>
+                <input type="text" id="idadeExpositor" name="idadeExpositor" placeholder="Idade" required><br>
+                <label for="telExpositor">Telefone</label><br>
+                <input type="tel" id="telExpositor" name="telExpositor" placeholder="Telefone" required><br>
+                <label for="emailExpositor">E-mail</label><br>
+                <input type="email" id="emailExpositor" name="emailExpositor" placeholder="E-mail" required><br>
+                <label for="sobreExpositor">Descrição do Expositor</label><br>
+                <input type="text" id="sobreExpositor" name="sobreExpositor" placeholder="Descrição" required><br>
+                <input type="submit" value="Cadastrar" class="cadastrarbtn">
+                <input type="reset" value="Limpar" class="limparbtn">
+            </form>
+        </section>
+        <br>
+        <section>
+            <table class="tabela">
+                <h1 style="color: #bf81be; text-align: center;">RELATÓRIO: EXPOSITORES CADASTRADOS</h1>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Descrição</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    
+    <script src="../script/script.js"></script>
+    <script src="../script/expositores.js"> </script>
+</body>
+</html>
